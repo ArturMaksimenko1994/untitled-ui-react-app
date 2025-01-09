@@ -1,0 +1,21 @@
+.f-carousel {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.f-carousel__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 460px;
+}
+
+.f-carousel__slide img {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: #e7e4f2;
+}

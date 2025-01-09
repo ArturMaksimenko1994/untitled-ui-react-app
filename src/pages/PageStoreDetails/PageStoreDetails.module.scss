@@ -1,0 +1,10 @@
+.page {
+  padding: 24px 0;
+
+  &__row {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+}

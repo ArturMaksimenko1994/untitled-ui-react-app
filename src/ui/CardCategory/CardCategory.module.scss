@@ -1,0 +1,34 @@
+.card {
+  position: relative;
+  height: 380px;
+  border: 1px solid black;
+  overflow: hidden;
+
+  &__link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.2s;
+  }
+
+  &:hover img {
+    transform: scale(1.08);
+  }
+
+  h3 {
+    position: absolute;
+    bottom: 20px;
+    z-index: 2;
+    padding: 10px;
+    background-color: aquamarine;
+    left: 20px;
+  }
+}

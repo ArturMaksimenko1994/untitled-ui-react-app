@@ -1,0 +1,9 @@
+.error {
+  padding: 24px;
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+}

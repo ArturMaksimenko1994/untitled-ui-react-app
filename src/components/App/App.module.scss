@@ -1,0 +1,11 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+.main {
+    flex: 1;
+    margin: 24px 0 32px 0;
+}

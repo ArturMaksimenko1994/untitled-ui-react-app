@@ -1,0 +1,52 @@
+.header {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .05);
+
+    &__top {
+        background-color: #f6f7f9;
+    }
+
+    &__top-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+    }
+
+    &__helpful {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__center-row {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding-top: 17px;
+        padding-bottom: 22px;
+    }
+
+    &__logo {
+        padding: 6px 12px;
+        border: 1px solid black;
+        font-size: 20px;
+    }
+
+    &__search {
+        width: 100%;
+
+        input {
+            width: 100%;
+            padding: 6px 12px;
+        }
+    }
+
+    &__account-nav {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__bottom-row {
+        display: flex;
+        gap: 10px;
+    }
+}

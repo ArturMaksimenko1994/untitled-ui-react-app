@@ -1,0 +1,23 @@
+.product {
+  &__row {}
+
+  &__nav {
+    padding: 16px 0;
+    background-color: $gray-400;
+    text-align: center;
+  }
+
+  &__pagination {
+    padding: 16px 0;
+    background-color: $gray-500;
+    text-align: center;
+  }
+}
+
+.list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 32px 0;
+}

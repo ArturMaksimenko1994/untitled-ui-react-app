@@ -1,0 +1,26 @@
+.aside {
+  max-width: 180px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  li {
+    a {
+      text-decoration: none;
+      color: black; // Базовый цвет ссылок
+
+      &:hover {
+        color: blue; // Цвет при наведении
+      }
+    }
+
+    &.active a {
+      color: red; // Цвет активной ссылки
+      font-weight: bold; // Дополнительное выделение
+    }
+  }
+}
