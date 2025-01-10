@@ -29,37 +29,34 @@ const PageProduct: React.FC = () => {
     altText: image.altText || 'Изображение товара',
   })) || [];
 
-
-
   return (
     <>
-
       <section className={styles.product}>
         <div className="container">
 
           <div className={styles.product__row}>
 
-            <div className={styles.product__images}>
-              <ProductGallery images={galleryImages} />
-            </div>
+            <ProductGallery images={galleryImages} />
+
+            {/* ProductDetails */}
 
             <div className={styles.product__details}>
+
               <h1 className="h1">{product.name}</h1>
+
+              <p className={styles.product__sku}>Артикул - {product.sku}</p>
+
               <p>Цена: {product.price} ₽</p>
               {product.regularPrice && product.price && (
                 <p>Старая цена: <s>{product.regularPrice} ₽</s></p>
               )}
-
             </div>
 
             <div className={styles.product__actions}>
               Цена доставки <br />
               Будет описание всего
             </div>
-
           </div>
-
-
         </div>
       </section>
 
@@ -68,6 +65,22 @@ const PageProduct: React.FC = () => {
           <div className={styles.description__row}>
             <div className="h2">Описание</div>
             <div className="gutenberg-content" dangerouslySetInnerHTML={{ __html: product.description }}></div>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.specifications}>
+        <div className="container">
+          <div className={styles.specifications__row}>
+            <p>тут будут характеристики</p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.popular}>
+        <div className="container">
+          <div className={styles.popular__row}>
+            <p>популярное</p>
           </div>
         </div>
       </section>
